@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+    <center>
+        <TabPane>
+            <!-- Onglet Gérer les routes -->
+            <Tab text="Gérer les routes">
+                <VBox spacing="10" padding="10">
+                    <GridPane hgap="10" vgap="10">
+                        <Label text="Source:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="sourceField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Destination:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="destinationField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Horaires:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="horairesField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Arrêts:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <TextField fx:id="arretsField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="Numéro de bus:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                        <TextField fx:id="numBusField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+                    </GridPane>
+
+                    <HBox spacing="10">
+                        <Button text="Ajouter" />
+                        <Button text="Modifier" />
+                        <Button text="Supprimer" />
+                    </HBox>
+
+                    <TextArea fx:id="routesArea" editable="false" wrapText="true"/>
+                </VBox>
+            </Tab>
+
+            <!-- Onglet Gérer les utilisateurs -->
+            <Tab text="Gérer les utilisateurs">
+                <VBox spacing="10" padding="10">
+                    <GridPane hgap="10" vgap="10">
+                        <Label text="ID Utilisateur:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <TextField fx:id="userIdField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+                        <Label text="Nom:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="nomField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                        <Label text="Prénom:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="prenomField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+                        <Label text="Email:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                        <TextField fx:id="emailField" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+
+                        <Label text="Âge:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+                        <TextField fx:id="ageField" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+
+                        <Label text="Sexe:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+                        <TextField fx:id="sexField" GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+                    </GridPane>
+
+                    <HBox spacing="10">
+                        <Button text="Ajouter" />
+                        <Button text="Modifier" />
+                        <Button text="Supprimer" />
+                    </HBox>
+
+                    <TextArea fx:id="usersArea" editable="false" wrapText="true"/>
+                </VBox>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

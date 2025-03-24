@@ -1,0 +1,74 @@
+
+.root {
+    -fx-primary-color: #007bff;
+    -fx-secondary-color: #6c757d;
+    -fx-success-color: #28a745;
+    -fx-danger-color: #dc3545;
+    -fx-warning-color: #ffc107;
+    -fx-info-color: #17a2b8;
+    -fx-light-color: #f8f9fa;
+    -fx-dark-color: #343a40;
+}
+
+
+.button {
+    -fx-background-color: -fx-primary-color;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand;
+
+}
+
+.button:hover {
+    -fx-background-color: #0056b3;
+}
+
+.button-danger {
+    -fx-background-color: -fx-danger-color;
+}
+
+.button-danger:hover {
+    -fx-background-color: #c82333;
+}
+
+.TextField {
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 5px;
+}
+
+.TextField:focused {
+    -fx-border-color: -fx-primary-color;
+
+}
+
+
+.label {
+    -fx-font-size: 16px;
+    -fx-text-fill: -fx-dark-color;
+}
+
+.Vbox {
+    -fx-background-color: #c0dcf2;
+    -fx-border-color: #ddd;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 20px;
+}
+
+.alert {
+    -fx-background-color: -fx-info-color;
+    -fx-text-fill: white;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+.Text{
+    -fx-background-color: black;
+
+}

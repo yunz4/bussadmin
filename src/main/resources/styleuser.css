@@ -1,0 +1,30 @@
+/* Appliquer un fond blanc aux cellules */
+.table-view {
+    -fx-background-color: white;
+}
+
+/* Appliquer un fond blanc aux lignes de la table */
+.table-row-cell {
+    -fx-background-color: white;
+    -fx-border-color: lightgray;
+}
+
+/* Appliquer un fond blanc aux cellules et du texte noir */
+.table-cell {
+    -fx-background-color: white;
+    -fx-text-fill: black; /* Texte noir */
+    -fx-font-size: 14px; /* Ajuste la taille du texte si nécessaire */
+    -fx-border-radius: 10px;
+
+}
+
+/* Appliquer une couleur différente aux cellules sélectionnées */
+.table-row-cell:selected {
+    -fx-background-color: lightblue;
+    -fx-text-fill: black; /* Texte noir même si sélectionné */
+}
+
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane stylesheets="style2.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.demo.MainController">
+    <VBox alignment="CENTER" maxHeight="600.0" maxWidth="800.0" minHeight="600.0" minWidth="800.0" prefWidth="800.0" spacing="20" styleClass="panel" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20">
+        <Text fill="#1e1e1e" text="BussApp Admin">
+            <font>
+                <Font name="Arial Bold" size="28" />
+            </font>
+        </Text>
+
+        <Button onAction="#goAjouterRoute" styleClass="menu-button" text="Ajouter une route" />
+        <Button styleClass="menu-button" text="Modifier une route" />
+        <Button styleClass="menu-button" text="Supprimer une route" />
+        <Button  onAction="#goBackToMain" text="Retour" />
+
+
+    </VBox>
+
+</AnchorPane>

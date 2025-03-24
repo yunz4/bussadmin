@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="styleuser.css"
+            xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.demo.UserController">
+
+    <!-- HBox pour occuper l'espace après le menu -->
+    <HBox spacing="20.0" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+          AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+
+        <!-- TableView qui prend toute la largeur disponible -->
+        <TableView fx:id="userTable" styleClass="table-view" HBox.hgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="nom" prefWidth="150" text="Nom" />
+                <TableColumn fx:id="prenom" prefWidth="150" text="Prénom" />
+                <TableColumn fx:id="email" prefWidth="250" text="Email" />
+                <TableColumn fx:id="age" prefWidth="100" text="Age" />
+                <TableColumn fx:id="sex" prefWidth="100" text="Sexe" />
+                <TableColumn fx:id="actionColumn" prefWidth="150" text="Action" />
+            </columns>
+        </TableView>
+    </HBox>
+
+
+
+</AnchorPane>
